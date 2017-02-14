@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <link 
-    rel="stylesheet" 
-    type="text/css" 
-    href="examples.css">
-  <link 
-    href="http://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700" 
-	rel="stylesheet" 
-	type="text/css">
-	<script src="jquery.min.js"> </script>
-	<script src="examples.js"> </script>
+  <link rel="stylesheet" type="text/css" href="examples.css">
+  <link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700" >
+  
+  <script src="jquery.min.js"> </script>
+  <script src="boostrap/js/bootstrap.min.js"> </script>
+  <script src="boostrap/js/transition.min.js"> </script>
+  <script src="examples.js"> </script>
  </head>
  <body style="background-color: rgba(255, 215, 156, 0.7);">
-	<div style="position:relative; height:500px; overflow:hidden;">
-	  <div class="nav_bar">
-	    <div> 
-			<img src="menu.png" height="35" align="left" class="btn_menu"/>
-			<font style="padding-left:10px;">Examples Smart House</font>
-			<div align="right">
-				<div class="flip-container78">
-					<div class="flipper78">
-						<div class="flip_face_a78">
-							<span>
-								<a href="#123" style="text-decoration:none; color:#ffffff;font-family: 'Roboto';">
-									<img src="https://cdn0.iconfinder.com/data/icons/cloud-soft/512/opinion-128.png" align="left" class="icon_opinion"/>
-									We want to opinion
-								</a>
-							</span>
+ 
+	 <nav class="navbar navbar-default" style="z-index:1;">
+	  <div class="container-fluid nav-style">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" style="color:white;" href="#">Examples Smart House</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li class="dropdown" style="background-color:#00897b;">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Showing <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#" id="bio" class="show_filtered">Bio</a></li>
+				<li><a href="#" id="future" class="show_filtered">Future</a></li>
+				<li><a href="#" id="benefit" class="show_filtered">Benefit</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#" class="show_all">All</a></li>
+				<li><a href="#" class="show_none">None</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		  <div class="flip-container78">
+			<div class="flipper78">
+				<div class="flip_face_a78">
+					<span>
+						<a href="#123" style="text-decoration:none; color:#ffffff;font-family: 'Roboto';">
+							<img src="https://cdn0.iconfinder.com/data/icons/cloud-soft/512/opinion-128.png" align="left" class="icon_opinion"/>
+							<span> We want to opinion </span>
+						</a>
+					</span>
+				</div>
+				<div class="flip_face_b78">
+					
+					<a href="#123" style="text-decoration:none;" id="like" class="vote">
+						<div style="float:right;width:50%;color:#ffffff; background:#97bf0d;font-family:'Roboto';">
+							<img src="https://cdn0.iconfinder.com/data/icons/social-messaging-productivity-4/128/thumbs-up2-128.png" align="left" class="icon_opinion"/>
+							<span> Like </span>
 						</div>
-						<div class="flip_face_b78">
-						    
-							<a href="#123" style="text-decoration:none;">
-								<div style="float:right;width:50%;color:#ffffff; background:#97bf0d;font-family:'Roboto';">
-									<img src="https://cdn0.iconfinder.com/data/icons/social-messaging-productivity-4/128/thumbs-up2-128.png" align="left" class="icon_opinion"/>
-									Like
-								</div>
-							</a>
-							<a href="#123" style="text-decoration:none;">
-								<div style="float:right;width:49.4%;color:#ffffff; background:#cb2025;font-family:'Roboto';">
-									<img src="http://image.flaticon.com/icons/png/128/49/49874.png" align="left" class="icon_opinion"/>
-									Dislike
-								</div>
-							</a>
+					</a>
+					<a href="#123" style="text-decoration:none;" id="dislike" class="vote">
+						<div style="float:right;width:49.4%;color:#ffffff; background:#cb2025;font-family:'Roboto';">
+							<img src="http://image.flaticon.com/icons/png/128/49/49874.png" align="left" class="icon_opinion"/>
+							<span> Dislike </span>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
+		   </div>
 		</div>
 	  </div>
-	  <div class="first_linefirst_line">
-		<div class="card">
+	</nav>
+
+	<div class="content-page">
+		<div class="card" id="box_bio">
 			<div class="pics_card" style="background-image: url(http://www.wifeo.com/image_design_v3/images_codes/c/card_l1412231558.png)">
 			  <div class="txt_titre_card">Bio Smart House</div>
 			</div>
@@ -71,7 +94,7 @@
 			  <div class="read tool_link" style="color:#ff8f00;">Read</div>
 			</div>
 	    </div>
-		<div class="card" style ="margin-left:300px;">
+		<div class="card" style ="margin-left:300px;" id="box_future">
 			<div class="pics_card" style="background-image: url(http://dearsonginmyhead.com/wp-content/uploads/2014/04/abstract_minimalistic_music_geometry_andy_gilmore_triangles_africa_hitech_1920x1080_wallpaper_Wallpaper-HD_1920x1080_www.paperhi.com_-standard-blog-thumb-800x400.jpg">
 			  <div class="txt_titre_card">Future Smart House</div>
 			</div>
@@ -92,9 +115,9 @@
 			  <div class="read tool_link" style="color:#ff8f00;">Read</div>
 			</div>
 	    </div>
-		<div class="card" style ="margin-left:600px;">
+		<div class="card" style ="margin-left:600px;" id="box_benefit">
 			<div class="pics_card" style="background-image: url(https://s-media-cache-ak0.pinimg.com/originals/37/67/3b/37673bfb11eb162dd32577bf6f36869f.jpg">
-			  <div class="txt_titre_card">Benefit of a Smart Home</div>
+			  <div class="txt_titre_card">Benefit of a Smart House</div>
 			</div>
 			<div class="txt_desciption_card">
 				What’s the benefit of all of this connectivity? In a single word, convenience.<br><br>
@@ -107,9 +130,10 @@
 			  <div class="close tool_link" style="color:#333333; display:none;">Close</div>
 			  <div class="read tool_link" style="color:#ff8f00;">Read</div>
 			</div>
-	    </div>
-	  </div>	
+	    </div>	
 	  </div>
 	</div>
  </body>
 </html>
+
+
