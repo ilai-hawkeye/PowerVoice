@@ -1,0 +1,138 @@
+.page_content {
+    background-image: url(http://suptg.thisisnotatrueending.com/archive/28438899/images/1385161065911.jpg);
+}
+
+.start_form  {
+	margin-top: 385px;
+	width: 350px;
+	background-color: transparent;
+	border-color: white;
+}
+
+.login_form {
+	display:none; 
+	font-size:14px;
+}
+
+.title_form {
+	margin: 0;
+    color: #666666;
+    border-bottom: 1px solid #005046;
+    padding-bottom: 5px;
+}
+
+.block {
+	display: inline-block;
+}
+
+.close_form {
+	position:relative; 
+	float:right;
+	margin-top: -15px;
+}
+
+.title {
+	color: #9f0000;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.btn-sign {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px 5px;
+    border: 1px solid gainsboro;
+    padding-left: 10px;
+    background-color: #14bd94;
+    padding-right: 10px;
+}
+
+.btn-forgot {
+	margin-right: 105px;
+	cursor: pointer;
+}
+
+.form_content{
+  font-family:Verdana;
+  display:inline-block;
+  width:350px;
+  background-color:#ffffff;
+  margin:10px;
+  padding:5px;
+  vertical-align:top;
+  border-radius: 5px 5px;
+}
+
+.inputstyle{
+  background-color: #ffffff;
+  border: none;
+  padding: 3px;
+  margin: 3px;
+}
+
+.actionderoule{
+  cursor:pointer;
+  font-size:25px;
+  font-weight:300;
+  color:#666666;
+}
+
+.actionenroule{
+  cursor:pointer;
+  font-size:15px;
+  color:#000000;
+  line-height:15px;
+}
+
+.shareBox {
+    padding: 5px;
+    width: 170px;
+    border-radius: 5px;
+    cursor: pointer;
+	margin: 5px;
+}
+
+.social_fb {
+	background-color: #3B5998;
+}
+
+.social_g {
+	background-color: #DB4437;
+}
+
+.shareblock {
+    display: table-cell;
+	padding-left: 3px;
+}
+
+.shareLogo {
+    padding: 5px;
+    display: inline-block;
+    border-right: 1px solid #272626;
+    width: 40px;
+    text-align: center;
+}
+
+.shareText {
+    padding: 5px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+	font-size: 9px !important;
+}
+
+.fa-lg {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

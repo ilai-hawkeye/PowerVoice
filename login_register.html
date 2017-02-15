@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="login_register.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700" >
+  
+  <script src="angular/angular.min.js"> </script>
+  <script src="js/jquery.min.js"> </script>
+  <script src="boostrap/js/bootstrap.min.js"> </script>
+  <script src="boostrap/js/transition.min.js"> </script>
+  <script src="js/login_register.js"> </script>
+ </head>
+  <body class="page_content">
+    <div ng-app="myApp" ng-controller="myCtrl">
+		Name: <input ng-model="name">
+	</div>
+
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('myCtrl', function($scope) {
+			$scope.name = "John Doe";
+		});
+	</script>
+	<div align="center" >
+		<div align="center" class="start_form">
+			<span class="title"> Welcome</span>
+			<div align='center'>
+				<div class='conteneur_form1 form_content'>
+					<div   class='actionderoule' cible='form1'>
+						Login
+					</div>
+					<div class='deroule_form1 login_form'>
+						<h2 class="title_form">
+							Login
+							<div class="close_form">
+								<span class='actionenroule' cible='form1'>X</span>
+							</div>
+						</h2>
+						<br>
+						<input type="text" name="myinput1" ng-model="loginEmail" value="" class="inputstyle" size="30"  placeholder='Email adress'>
+						<br>
+						<input type="password" name="myinput2" value="" class="inputstyle"  size="30"  placeholder='Password'>
+						<br><br>
+						<div class="block">
+							<span class="btn-forgot"> Forgot your password? </span>
+							<span class="btn-sign btn-login"> Enter </span>
+						</div>
+						
+					</div>
+				</div>
+				<div class='conteneur_form2 form_content'>
+					<div   class='actionderoule' cible='form2'>
+						Subscribe
+					</div>
+					<div class='deroule_form2 login_form'>
+						<h2 class="title_form">
+							Subscribe
+							<div class="close_form">
+								<span class='actionenroule' cible='form2'>X</span>
+							</div>
+						</h2>
+						<br>
+						<input type="text" name="myinput1" value="" class="inputstyle" size="30"  placeholder='Name'>
+						<br>
+						<input type="text" name="myinput2" value="" class="inputstyle"  size="30"  placeholder='Email adress'>
+						<br>
+						<input type="password" name="myinput3" value="" class="inputstyle"  size="30"  placeholder='Password'>
+						<br><br>
+						<span class="btn-sign"> Register </span>
+					</div>
+				</div>
+			</div>
+			<div class="shareblock">
+				<div class="shareBox social_fb">
+					<div class="shareLogo">
+						<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+					</div>
+					<div class="shareText">Sign in with Facebook</div>
+				</div>
+			</div>
+			<div class="shareblock">
+				<div class="shareBox social_g">
+					<div class="shareLogo">
+						<i class="fa fa-google fa-lg" aria-hidden="true"></i>
+					</div>
+					<div class="shareText">Sign in with Google+</div>
+				</div>
+			</div>
+		</div>
+ 	</div>
+ </body>
+</html>
+
+

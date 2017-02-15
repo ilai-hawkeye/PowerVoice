@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="examples.css">
+  <link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700" >
+  
+  <script src="js/jquery.min.js"> </script>
+  <script src="boostrap/js/bootstrap.min.js"> </script>
+  <script src="boostrap/js/transition.min.js"> </script>
+  <script src="js/examples.js"> </script>
+ </head>
+ <body style="background-color: rgba(255, 215, 156, 0.7);">
+	 <nav class="navbar navbar-default" style="z-index:1;">
+	  <div class="container-fluid nav-style">
+		<div class="navbar-header">
+		  <a class="navbar-brand" style="color:white; cursor: default;" href="#">Examples Smart House</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li class="dropdown" style="background-color:#00897b;">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Showing <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li>
+					<a href="#" id="bio" class="show_filtered">
+					  Bio <span class="glyphicon glyphicon-ok" style="display:none"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="future" class="show_filtered">
+						Future <span class="glyphicon glyphicon-ok" style="display:none"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="benefit" class="show_filtered">
+						Benefit <span class="glyphicon glyphicon-ok" style="display:none"></span>
+					</a>
+				</li>
+				<li role="separator" class="divider"></li>
+				<li>
+					<a href="#" class="show_all" id="showing_all">
+						All <span class="glyphicon glyphicon-ok" style="display:none"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="show_none">
+						None <span class="glyphicon glyphicon-ok" style="display:none"></span>
+					</a>
+				</li>
+			  </ul>
+			</li>
+		  </ul>
+		  <div class="flip-container78">
+			<div class="flipper78">
+				<div class="flip_face_a78">
+					<span>
+						<a href="#vote" style="text-decoration:none; color:#ffffff;font-family: 'Roboto';">
+							<img src="https://cdn0.iconfinder.com/data/icons/cloud-soft/512/opinion-128.png" align="left" class="icon_opinion"/> <span> Do you like our web? </span>
+						</a>
+					</span>
+				</div>
+				<div class="flip_face_b78">
+					<a href="#liked" style="text-decoration:none;" id="like" class="vote">
+						<div style="float:right;width:50%;color:#ffffff; background:#97bf0d;font-family:'Roboto';">
+							<img src="https://cdn0.iconfinder.com/data/icons/social-messaging-productivity-4/128/thumbs-up2-128.png" align="left" class="icon_opinion"/> <span> I like it </span>
+						</div>
+					</a>
+					<a href="#disliked" style="text-decoration:none;" id="dislike" class="vote">
+						<div style="float:right;width:49.4%;color:#ffffff; background:#cb2025;font-family:'Roboto';">
+							<img src="http://image.flaticon.com/icons/png/128/49/49874.png" align="left" class="icon_opinion"/> <span> I dislike it </span>
+						</div>
+					</a>
+				</div>
+			</div>
+		   </div>
+		</div>
+	  </div>
+	</nav>
+	<div class="content-page">
+		<div class="card" id="box_bio">
+			<div class="pics_card" style="background-image: url(http://www.wifeo.com/image_design_v3/images_codes/c/card_l1412231558.png)">
+			  <div class="txt_titre_card">Bio Smart House</div>
+			</div>
+			<div class="txt_desciption_card">
+				What if all the devices in your life could connect to the Internet? Not just computers and smartphones,
+				but everything: clocks, speakers, lights, doors, , cameras, windows, window blinds, hot water heaters,
+				appliances, cooking utensils, you name it. And what if those devices could all communicate, send you information,
+				and take your commands? It's not science fiction; it's the Internet of Things (IoT), and it's a key component of home automation and smart homes.<br><br>
+				
+				Home automation is exactly what it sounds like: automating the ability to control items around the house—from window
+				shades to pet feeders—with a simple push of a button (or a voice command). Some activities, like setting up a lamp to turn on and off at your whim, 
+				are simple and relatively inexpensive. Others, like advanced surveillance cameras, may require a more serious investment of time and money.<br><br>
+
+				There are many smart home product categories, so you can control everything from lights and temperature to locks and security in your home.
+			</div>
+			<div align="left" class="buttons_card">
+			  <div class="close tool_link" style="color:#333333; display:none;">Close</div>
+			  <div class="read tool_link" style="color:#ff8f00;">Read</div>
+			</div>
+	    </div>
+		<div class="card" style ="margin-left:300px;" id="box_future">
+			<div class="pics_card" style="background-image: url(http://dearsonginmyhead.com/wp-content/uploads/2014/04/abstract_minimalistic_music_geometry_andy_gilmore_triangles_africa_hitech_1920x1080_wallpaper_Wallpaper-HD_1920x1080_www.paperhi.com_-standard-blog-thumb-800x400.jpg">
+			  <div class="txt_titre_card">Future Smart House</div>
+			</div>
+			<div class="txt_desciption_card">
+				Kevin Foreman belives that homes will soon become intelligent enough to distinguish between family members and guests within physical spaces and adapt 
+				to individual needs based on biometrics like fingerprints, body temperatures and even the rhythm of our own heartbeats.<br><br>
+
+				In the very near future as you walk through your home, a small device worn around the wrist will authenticate your identity by pairing itself to your
+				specific heartbeat, allowing your home to automatically adjust the lighting, room temperature and play custom music based on personalized preferences 
+				and pre-configured profiles.<br><br>
+
+				While this may sound like some futuristic mash-up of daily life straight out of Oblivion, Iron Man or even The Jetsons, 
+				it’s really not so far off and indeed, several companies are already pouring millions of dollars into developing technologies that seamlessly 
+				integrate our digital and physical worlds within our cars and homes.
+			</div>
+			<div align="left" class="buttons_card">
+			  <div class="close tool_link" style="color:#333333; display:none;">Close</div>
+			  <div class="read tool_link" style="color:#ff8f00;">Read</div>
+			</div>
+	    </div>
+		<div class="card" style ="margin-left:600px;" id="box_benefit">
+			<div class="pics_card" style="background-image: url(https://s-media-cache-ak0.pinimg.com/originals/37/67/3b/37673bfb11eb162dd32577bf6f36869f.jpg">
+			  <div class="txt_titre_card">Benefit of a Smart House</div>
+			</div>
+			<div class="txt_desciption_card">
+				What’s the benefit of all of this connectivity? In a single word, convenience.<br><br>
+				
+				Having a smart home lets you do a lot of the things that you’d normally do — like adjusting the air conditioning, turning off the lights, pre-heating the oven,
+				lending a key to your neighbor — with a lot less effort. You can set schedules for your appliances, so that certain things will happen at specific times of day, 
+				and some appliances will even learn your schedule and activities so that the amount of effort you have to put toward managing your home is drastically reduced.
+			</div>
+			<div align="left" class="buttons_card">
+			  <div class="close tool_link" style="color:#333333; display:none;">Close</div>
+			  <div class="read tool_link" style="color:#ff8f00;">Read</div>
+			</div>
+	    </div>	
+		<div id="box_none" style="padding: 50px; display:none">
+			<span> There are no boxes to show. </span>
+		</div>
+	  </div>
+	</div>
+ </body>
+</html>
+
+
